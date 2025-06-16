@@ -2,8 +2,6 @@
 
 PyPlay is a sleek, feature-rich media player built with Python, PyQt5, and the powerful libVLC engine. It provides a smooth playback experience with a modern, dark user interface.
 
-![PyPlay Screenshot] PyPlay/path/to/assets/screenshot.png
-
 ## Features
 
 -   Smooth playback for a wide variety of video and audio formats.
