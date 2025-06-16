@@ -22,7 +22,7 @@ To run the PyPlay application, follow these steps:
     -   **[Download and install VLC](https://www.videolan.org/vlc/)** for your operating system (e.g., the 64-bit version for 64-bit Windows).
 
 2.  **Download PyPlay:**
-    -   Go to the [**Releases Page**](https://github.com/[Your-GitHub-Username]/[Your-Repository-Name]/releases).
+    -   Go to the [**Releases Page**](https://github.com/AmiNilay/PyPlay/releases/download/v1.0.0/PyPlay-v1.0-Windows.zip).
     -   Download the latest `.zip` file (e.g., `PyPlay-v1.0-Windows.zip`).
 
 3.  **Unzip and Run:**
