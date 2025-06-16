@@ -1,0 +1,207 @@
+/* PyPlay/style.qss */
+
+/* Overall Window */
+QMainWindow, QWidget {
+    background-color: #282c34; /* Dark background */
+    color: #abb2bf; /* Light grey text */
+    font-family: Segoe UI, Arial, sans-serif; /* Common modern fonts */
+}
+
+/* Video Frame */
+#videoFrame { /* Use object name for specific targeting */
+    background-color: black;
+    border: none; /* Remove default frame border */
+}
+
+/* Labels (Time, Speed, Playlist Title) */
+QLabel {
+    color: #abb2bf;
+    padding: 2px;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #3b4048; /* Slightly lighter dark */
+    color: #eeeeee; /* White-ish text */
+    border: 1px solid #5c6370; /* Subtle border */
+    padding: 5px 10px; /* Add padding */
+    min-height: 20px; /* Ensure minimum height */
+    border-radius: 4px; /* Rounded corners */
+    outline: none; /* Remove focus outline */
+}
+
+QPushButton:hover {
+    background-color: #4e545e; /* Lighter on hover */
+    border-color: #7f8794;
+}
+
+QPushButton:pressed {
+    background-color: #323840; /* Darker when pressed */
+}
+
+QPushButton:disabled {
+    background-color: #31353c;
+    color: #5c6370;
+    border-color: #4a4f58;
+}
+
+QPushButton:checked { /* For Mute Button */
+    background-color: #c678dd; /* Example accent color when checked (purple) */
+    border-color: #be50e7;
+    color: #ffffff;
+}
+QPushButton:checked:hover {
+     background-color: #be50e7;
+}
+
+/* Style menu button specifically (if it were still used) */
+/* QPushButton#openMenuButton { */
+/*     padding: 5px; */
+/* } */
+
+/* Sliders (Seek, Volume, Speed) */
+QSlider::groove:horizontal {
+    border: 1px solid #4a4f58;
+    height: 4px; /* Groove height */
+    background: #40454e;
+    margin: 2px 0;
+    border-radius: 2px;
+}
+
+QSlider::handle:horizontal {
+    background: #61afef; /* Accent color for handle (blue) */
+    border: 1px solid #61afef;
+    width: 12px; /* Handle width */
+    height: 12px; /* Make handle slightly taller */
+    margin: -5px 0; /* Adjust vertical margin to center handle */
+    border-radius: 6px; /* Circular handle */
+}
+QSlider::handle:horizontal:hover {
+    background: #7cc0f1;
+    border: 1px solid #7cc0f1;
+}
+QSlider::handle:horizontal:pressed {
+    background: #509bde;
+    border: 1px solid #509bde;
+}
+
+QSlider::sub-page:horizontal { /* Style the filled part (progress) */
+    background: #98c379; /* Different accent for progress (green) */
+    border: 1px solid #4a4f58;
+    height: 4px;
+    border-radius: 2px;
+}
+
+QSlider::add-page:horizontal { /* Style the unfilled part */
+    background: #40454e;
+    border: 1px solid #4a4f58;
+    height: 4px;
+    border-radius: 2px;
+}
+
+QSlider:disabled {
+    /* Optional: Different styling for disabled sliders */
+}
+
+
+/* Playlist View */
+QListWidget {
+    background-color: #21252b; /* Slightly darker than main background */
+    border: 1px solid #4a4f58;
+    color: #abb2bf;
+    border-radius: 4px;
+    outline: none; /* Remove focus outline */
+    padding: 2px; /* Small internal padding */
+}
+
+QListWidget::item {
+    padding: 5px;
+    color: #abb2bf;
+    border-radius: 3px; /* Rounded corners for items */
+    margin: 1px 0; /* Add slight vertical margin */
+}
+
+QListWidget::item:selected {
+    background-color: #3b4048; /* Selection color */
+    color: #ffffff; /* Selected text color */
+    border: none;
+}
+
+QListWidget::item:hover {
+    background-color: #2c313a; /* Hover color */
+}
+
+/* Splitter Handle */
+QSplitter::handle:horizontal {
+    background-color: #4a4f58; /* Make handle visible but subtle */
+    width: 1px; /* Thin handle */
+    margin: 2px 0;
+}
+QSplitter::handle:horizontal:hover {
+    background-color: #5c6370;
+}
+
+/* Menu Bar */
+QMenuBar {
+    background-color: #282c34; /* Match window background */
+    color: #abb2bf;
+    border-bottom: 1px solid #4a4f58; /* Separator line */
+    padding: 2px;
+    spacing: 10px; /* Spacing between menu titles */
+}
+
+QMenuBar::item {
+    background-color: transparent;
+    padding: 4px 8px;
+    color: #abb2bf;
+}
+
+QMenuBar::item:selected { /* Hover over menu title */
+    background-color: #3b4048;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+QMenuBar::item:pressed {
+    background-color: #4e545e;
+}
+
+/* Menu Dropdown */
+QMenu {
+    background-color: #3b4048;
+    border: 1px solid #5c6370;
+    color: #eeeeee;
+    padding: 5px;
+}
+
+QMenu::item {
+    padding: 5px 15px;
+    color: #eeeeee;
+    border-radius: 3px; /* Rounded corners for menu items */
+}
+
+QMenu::item:selected { /* Hover/Selection */
+    background-color: #4e545e;
+}
+
+QMenu::item:disabled {
+    color: #5c6370; /* Grey out disabled menu items */
+    background-color: transparent;
+}
+
+
+QMenu::separator {
+    height: 1px;
+    background: #5c6370;
+    margin: 4px 0;
+}
+
+/* Tooltips */
+QToolTip {
+    background-color: black;
+    color: white;
+    border: 1px solid #5c6370;
+    padding: 4px;
+    border-radius: 3px;
+    opacity: 230; /* Slightly transparent */
+}
